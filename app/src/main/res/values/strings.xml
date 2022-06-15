@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parsehub</string>
+    <string name="Favorite">Favorite</string>
+    <string name="search">search</string>
+    <string name="home">home</string>
+    <string name="searchHere">Search Here</string>
+    <string name="empityList">Empty</string>
+</resources>

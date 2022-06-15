@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5mdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ItemcardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_3mdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_8mdp"
+        app:cardElevation="@dimen/_4mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40mdp"
+                android:layout_marginHorizontal="@dimen/_5mdp"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/_10mdp"
+                android:text="Sobhan_User"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_260mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userName">
+
+                <ImageView
+                    android:id="@+id/imageProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewShowEmpty"
+                    android:layout_width="@dimen/_70mdp"
+                    android:layout_height="@dimen/_70mdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/emptybox"
+                    android:visibility="gone"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30mdp"
+                android:layout_marginHorizontal="@dimen/_6mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewImageProduct">
+
+
+                <ImageView
+                    android:id="@+id/imageViewChecked"
+                    android:layout_width="@dimen/_30mdp"
+                    android:layout_height="@dimen/_30mdp"
+                    android:layout_marginVertical="@dimen/_5mdp"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_verified"
+                    android:padding="@dimen/_5mdp"
+                    />
+
+                <TextView
+                    android:id="@+id/userTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30mdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5mdp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13font_mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewChecked"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewStateProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30mdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5mdp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13font_mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textViewDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="3"
+                android:layout_marginLeft="@dimen/_6mdp"
+                android:text="TextView"
+                android:textSize="@dimen/_12font_mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleLay" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45mdp"
+                android:layout_marginHorizontal="@dimen/_6mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDiscription">
+
+
+                <ImageView
+                    android:id="@+id/imageViewLike"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="@dimen/_25mdp"
+                    android:gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:padding="@dimen/_4mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_vote"/>
+
+                <TextView
+                    android:id="@+id/textViewCountLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_marginLeft="@dimen/_8mdp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewLike"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageViewComment"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="@dimen/_25mdp"
+                    android:layout_marginStart="@dimen/_8mdp"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:padding="@dimen/_4mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textViewCountLike"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_comment"/>
+
+                <TextView
+                    android:id="@+id/textViewCountComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_marginLeft="@dimen/_8mdp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewComment"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageViewShare"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="@dimen/_25mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCountComment"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_share"
+                    android:padding="@dimen/_4mdp"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8mdp"
+                    android:scaleType="centerCrop"/>
+
+
+
+                <ImageView
+                    android:id="@+id/imageViewMenu"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="@dimen/_25mdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:padding="@dimen/_4mdp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_more" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
