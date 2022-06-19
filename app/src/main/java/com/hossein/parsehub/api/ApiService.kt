@@ -8,6 +8,6 @@ interface ApiService {
     // TODO:  
     // Item List
     @GET("feed")
-    suspend fun getItemsList(): Response<ResponseItems>
+    suspend fun getItemsList(@Query("page") page:Int): Response<ResponseItems>
 
 }

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ResponseItems(
     @SerializedName("docs")
-    val docs: List<Doc?>?,
+    val docs: List<Doc>?,
     @SerializedName("hasMore")
     val hasMore: Boolean?,
     @SerializedName("limit")
