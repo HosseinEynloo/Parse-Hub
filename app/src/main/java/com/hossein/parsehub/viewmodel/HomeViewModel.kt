@@ -16,11 +16,11 @@ class HomeViewModel @Inject constructor(private val repository: HomeRepository) 
 
     val loading = MutableLiveData<Boolean>()
 
-    val itemsList =MutableLiveData<ResponseItems>()
+    val itemsList = MutableLiveData<ResponseItems>()
 
-    fun loadItems() = viewModelScope.launch {
+    fun loadItems(page:Int) = viewModelScope.launch {
         loading.postValue(true)
-        val respose = repository.itemsList()
+        val respose = repository.itemsList(page)
         if (respose.isSuccessful) {
             itemsList.postValue(respose.body())
         }
