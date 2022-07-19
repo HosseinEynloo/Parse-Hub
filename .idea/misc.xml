@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_round_favorite_24.xml" value="0.1105" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/empty_items.xml" value="0.18072916666666666" />
+        <entry key="app/src/main/res/layout/fragment_favorate.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/fragment_hom.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.16018518518518518" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.18072916666666666" />

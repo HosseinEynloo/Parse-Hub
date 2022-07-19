@@ -46,4 +46,9 @@ class HomeActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onNavigateUp()
     }
 
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+    }
 }
